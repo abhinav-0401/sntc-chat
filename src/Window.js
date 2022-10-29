@@ -2,7 +2,6 @@ import ChatBox from "./ChatBox";
 import ChatDisplay from "./ChatDisplay";
 import { useState } from "react";
 
-
 // Okay so all I need to do now is to wait for the chatbot's response
 // Thus, the workflow is to type a message, then send a fetch request to the server based on the msg
 // then get a response back and append the chatList state with a property that determines the origin of the chat
@@ -33,7 +32,7 @@ function Window({ socket }) {
   }
 
   return (
-    <div className="window text-xl" id="chat-window">  
+    <div className="window">  
       <ChatBox submitClickHandler={submitClickHandler} />
       <ChatDisplay chatList={chatList} />
     </div>

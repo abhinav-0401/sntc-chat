@@ -16,9 +16,7 @@ function ChatBox({ submitClickHandler }) {
         <button onClick={(event) => {
           submitClickHandler(event, message);
           setMessage("");
-        }}
-          id="send-message" className="button is-success is-fullwidth is-normal"
-        > 
+        }}> 
           Send 
         </button>
       </form>

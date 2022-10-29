@@ -3,7 +3,7 @@ function ChatDisplay({ chatList }) {
   // console.log(chatList.map(chat => console.log(chat.id, chat.msg, "this is the chatList map func")));
 
   return (
-    <div className="chatDisplay" id="display-message">
+    <div className="chatDisplay">
       {
         chatList?.map(chat => (
           <div className="message" key={chat.id}>
